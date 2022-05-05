@@ -1,6 +1,7 @@
-import Energy from './Energy';
+import Energy from '../Energy';
+import SimpleFighter from './SimpleFighter';
 
-export default interface Figther {
+export default interface Figther extends SimpleFighter{
   lifePoints:number;
   strength:number;
   defense :number;
