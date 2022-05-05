@@ -7,8 +7,8 @@ export default interface Figther extends SimpleFighter{
   defense :number;
   energy?:Energy;
 
-  attack(enemy:Figther):void
+  attack(enemy:Figther | SimpleFighter):void
   special(enemy:Figther):void 
   levelUp():void 
   receiveDamage(attackPoints:number):void 
-}
+} 
